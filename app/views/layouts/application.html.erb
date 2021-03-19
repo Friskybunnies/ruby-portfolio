@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500,700" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <div class="menu col-md-4">
+        <h1>Justin Farris</h1>
+      </div>
+      <div class="menu col-md-8">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href=#>Programming</a></li>
+          <li><a href=#>Graphic Design</a></li>
+          <li><a href=#>Writing</a></li>
+          <li><a href=#>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= yield %>
+
+<div class="footer">
+  <div class="container">
+    <ul class="social_media">
+      <li>
+        <div class="github">
+          <a class="github" href="#">github</a>
+        </div>
+      </li>
+      <li>
+        <div class="linkedin">
+          <a href="#">linkedin</a>
+        </div>
+      </li>
+      
+    </ul>
+    <p>&copy; 2018 Justin Farris</p>
+  </div>
+</div>
+</body>
+</html>
